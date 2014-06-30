@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Oauth-singlesignon-samplecode by lelala</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/lelala/OAuth-SingleSignon-SampleCode">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/lelala/OAuth-SingleSignon-SampleCode/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/lelala/OAuth-SingleSignon-SampleCode/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Oauth-singlesignon-samplecode</h1>
+          <p>透過OAuth與ischool進行Single Sign on</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/lelala">lelala</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="oauth%E5%B8%B3%E8%99%9F%E6%95%B4%E5%90%88%E7%AF%84%E4%BE%8B" class="anchor" href="#oauth%E5%B8%B3%E8%99%9F%E6%95%B4%E5%90%88%E7%AF%84%E4%BE%8B"><span class="octicon octicon-link"></span></a>OAuth帳號整合範例</h1>
+
+<h2>
+<a name="%E4%B8%8B%E8%BC%89%E9%80%A3%E7%B5%90" class="anchor" href="#%E4%B8%8B%E8%BC%89%E9%80%A3%E7%B5%90"><span class="octicon octicon-link"></span></a>下載連結：</h2>
+
+<p><a href="https://github.com/lelala/OAuth-SingleSignon-SampleCode/archive/master.zip">https://github.com/lelala/OAuth-SingleSignon-SampleCode/archive/master.zip</a></p>
+
+<h2>
+<a name="%E8%AA%AA%E6%98%8E" class="anchor" href="#%E8%AA%AA%E6%98%8E"><span class="octicon octicon-link"></span></a>說明：</h2>
+
+<p>解壓縮之後，開啟對應語言的資料夾即為該語言的Sample code。</p>
+
+<p>設定config中的三個環境變數：</p>
+
+<ul>
+<li>ClientId：註冊app後取得</li>
+<li>ClientSecret：註冊app後取得</li>
+<li>RedirectURI：執行環境中的OAuthCallBack網址，需與註冊app時設定的資料相符（註冊app時不必要使用完整網址，可以只宣告到domain資訊如http://localhost即可）</li>
+</ul><p>最開始進入程式的頁面為Default，在Default中會有"登入"的按鈕，點擊"登入"進入OAuth流程。</p>
+
+<p>進入OAuth流程後首先是使用者登入以及授權，這部分會再認證主機進行處理。</p>
+
+<p>授權通過之後，會進入OAuthCallBack網頁，在OAuthCallBack中取得使用者資料，並與系統的帳號資訊進行整合。</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
